@@ -1,0 +1,28 @@
+Title: Financial Chatbot
+
+Description:
+This script implements a simple chatbot that provides financial data based on user queries. The chatbot interacts with the user to retrieve company-specific financial metrics for a given fiscal year.
+
+Modules Used:
+- pandas: A library used for data manipulation and analysis.
+
+Functions:
+1. chatbot():
+    - Description: This function handles user queries and retrieves the requested financial data.
+    - Inputs: None (User input is taken within the function)
+    - Output: Returns a string containing the requested financial data or an error message if the data is not found.
+
+Usage:
+1. Run the script.
+2. The user is prompted to input 'go' to start the chatbot or 'exit' to end.
+3. If 'go' is entered:
+    a. The user is prompted to input the company name.
+    b. The user is prompted to input the fiscal year.
+    c. The chatbot retrieves the requested financial data based on the user's query.
+    d. The chatbot prints the retrieved financial data or an error message if the data is not found.
+4. If 'exit' is entered, the script terminates with a farewell message.
+
+Notes:
+- The script assumes the presence of CSV files containing financial datas named "Final_Data_Report.csv".
+- The chatbot currently supports queries for various financial metrics such as Total Revenue, Net Income, Total Assets, Total Liabilities, Cash Flow from Operating Activities, Revenue Growth (%), Net Income Growth (%), Assets Growth (%), Liabilities Growth (%), and Cash Flow from Operations Growth(%).
+- The chatbot performs case-insensitive matching for user queries to improve user experience.
